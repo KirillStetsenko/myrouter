@@ -6,10 +6,11 @@
   >
     <nav>
       <router-link :to="{ name: 'Home' }" class="link">Home</router-link> |
+      <router-link :to="{ name: 'Test' }">Test</router-link> |
       <router-link :to="{ name: 'About' }" class="link">About</router-link> |
       <router-link :to="{ name: 'Contact' }" class="link">Contact</router-link>
     </nav>
-    
+
     <router-view v-slot="{ Component }">
       <transition name="router">
         <component :is="Component"></component>
